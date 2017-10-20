@@ -38,7 +38,8 @@ class App extends Component {
 			defaultString: p_paragraph
 		});
 	}
-	handleClick(){
+	
+	handleClick() {
 		this.refs.user_entry.value = '';
 	}
 	
@@ -51,14 +52,17 @@ class App extends Component {
 					<div className="disclaimer">We're looking for letters only. Numbers and punctuation will be
 						ignored.
 					</div>
-					<textarea ref="user_entry" name="user_text" id="palindrome_textarea" onChange={this.handleChange} placeholder="Go ahead... Type something..."></textarea>
-					<div><button className='p_btn' onClick={this.handleClick}>clear</button></div>
+					<textarea ref="user_entry" name="user_text" id="palindrome_textarea" onChange={this.handleChange}
+					          placeholder="Go ahead... Type something..."></textarea>
+					<div>
+						<button className='p_btn' onClick={this.handleClick}>clear</button>
+					</div>
 					<div className="pd_container">
 						<span className="results_hdr">Palindromes Contained Within:</span>
 						<div><span className="results_content">{this.state.palindromes.join(', ')}</span></div>
-						
-					</div>
 					
+					</div>
+				
 				</div>
 			</div>
 		);
