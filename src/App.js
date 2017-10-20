@@ -48,7 +48,7 @@ class App extends Component {
 			<div className="App">
 				<div className="app_container">
 					<h1>Palindrome Locator</h1>
-					<div>Enter some text below, and we'll look to see if there are any palindromes in it!</div>
+					<div>Enter some text below. <br/> Then we'll have a look/see if there are any palindromes in it!</div>
 					<div className="disclaimer">We're looking for letters only. Numbers and punctuation will be
 						ignored.
 					</div>

@@ -28,7 +28,7 @@
 
 @media screen and (max-width : 900px) {
 	div.App {
-		text-size : 1em;
+		font-size : .9em;
 	}
 
 	textarea {
